@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CableBot</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
 
 
@@ -16,7 +16,7 @@
       <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <a class="navbar-item" href="https://cablebot.github.io">
-              <img src="../menu-logo.png" width="112" height="28">
+              <img src="menu-logo.png" width="112" height="28">
             </a>
         
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -41,7 +41,7 @@
               </a>
         
               <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link" href="../documentation.html">
+                <a class="navbar-link" href="documentation.html">
                   Documentation
                 </a>
         
@@ -91,47 +91,89 @@
       General
     </p>
     <ul class="menu-list">
-      <li><a href = "/">Project Overview</a></li>
-      <li><a href = "goals.html">Goals</a></li>
+      <li><a class = "is-active" href = "#">Project Overview</a></li>
+      <li><a href = "documentation/goals.html">Goals</a></li>
     </ul>
     <p class="menu-label">
       Hardware
     </p>
     <ul class="menu-list">
-      <li><a href="hardware.html">Overview</a></li>
-      <li><a href="hardware/design.html">Design</a></li>
+      <li><a href="documentation/hardware.html">Overview</a></li>
+      <li><a href="documentation/hardware/design.html">Design</a>
+        <ul>
+          <li><a>Frame</a></li>
+          <li><a>Pulley</a></li>
+          <li><a>Spool</a></li>
+          <li><a>Motor Assembly</a></li>
+          <li><a>Motor</a></li>
+        </ul>
+      </li>
+      <li><a href="documentation/hardware/kinematics.html">Kinematics</a></li>
     </ul>
+
+    
+    <p class="menu-label">
+      Electrical
+    </p>
+    <ul class="menu-list">
+      <li><a href="documentation/electrical.html">Overview</a></li>
+      <li><a href="documentation/electrical/design.html">Design</a>
+        <ul>
+            <li><a>Frame</a></li>
+            <li><a>Pulley</a></li>
+            <li><a>Spool</a></li>
+            <li><a>Motor Assembly</a></li>
+            <li><a>Motor</a></li>
+          </ul>
+        </li>
+    </ul>
+    
     
     <p class="menu-label">
       Software
     </p>
     <ul class="menu-list">
-      <li><a href="software.html">Overview</a></li>
-      <li><a href="software/gui.html">GUI</a></li>
-      <li><a>Algorithms</a></li>
-      <li><a href = "software/embedded.html">Embedded</a></li>
+      <li><a href="documentation/software.html">Overview</a></li>
+      <li><a href="documentation/software/gui.html">GUI</a>
+        <ul>
+            <li><a>Interface</a>
+            <ul>
+              <li><a>func1</a></li>
+            </ul></li>
+            <li><a>Kinematics</a></li>
+            <li><a>Communications</a></li>
+          </ul></li>
+      <li><a href = "documentation/software/embedded.html">Embedded</a>
+        <ul>
+            <li><a>Serial Commands</a></li>
+            <li><a>Step and Direction</a></li>
+            <li><a>RS-485 Commands</a></li>
+          </ul>
+        </li>
     </ul>
 
-    <p class="menu-label">
-      Electrical
-    </p>
-    <ul class="menu-list">
-      <li><a class = "is-active" href="electrical.html">Overview</a></li>
-      <li><a href="electrical/design.html">Design</a></li>
-    </ul>
-    
     <p class="menu-label">
       Drawings
     </p>
     <ul class="menu-list">
-      <li><a href="drawings.html">By Section</a></li>
+      <li><a href="documentation/drawings.html">By Section</a>
+        <ul>
+            <li><a>Frame</a></li>
+            <li><a>Pulley</a></li>
+            <li><a>Spool</a></li>
+            <li><a>Motor Assembly</a></li>
+            <li><a>Motor Board</a></li>
+            <li><a>End Effector Board</a></li>
+            <li><a>End Effector</a></li>
+          </ul>
+        </li>
     </ul>
 
     <p class="menu-label">
       Safety
     </p>
     <ul class="menu-list">
-      <li><a href="FMEAs.html">FMEAs</a></li>
+      <li><a href="documentation/FMEAs.html">FMEAs</a></li>
     </ul>
 
 

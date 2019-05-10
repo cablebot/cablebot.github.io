@@ -32,7 +32,10 @@ $primary-invert: $purple-invert;
 @import "../node_modules/bulma/bulma";
 
 .is-sidebar-menu {
+    margin-top:0.75rem;
+    margin-bottom: 0rem;
     padding: 2.5rem;
+    padding-top:2.0rem;
     background: #4a4a4a;
   }
   .is-sidebar-menu li a {
