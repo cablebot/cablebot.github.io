@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CableBot</title>
+    <title>Safety</title>
     <link rel="stylesheet" href="../css/main.css">
   </head>
 
@@ -50,9 +50,6 @@
                     Hardware
                   </a>
                   <a class="navbar-item">
-                    Firmware
-                  </a>
-                  <a class="navbar-item">
                     Software
                   </a>
                   <a class="navbar-item">
@@ -72,19 +69,16 @@
             </div>
         
             <div class="navbar-end">
-              <div class="navbar-item">
-                <div class="buttons">
-                  <a class="button is-primary">
-                    <strong>Sign up</strong>
-                  </a>
-                  <a class="button is-light">
-                    Log in
-                  </a>
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary">
+                      <strong>About Us</strong>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
 
         
 <div class="columns is-fullheight">
@@ -94,7 +88,7 @@
       General
     </p>
     <ul class="menu-list">
-      <li><a class = "is-active" href = "/">Project Overview</a></li>
+      <li><a href = "../documentation.html">Project Overview</a></li>
       <li><a href = "goals.html">Goals</a></li>
     </ul>
     <p class="menu-label">
@@ -103,17 +97,9 @@
     <ul class="menu-list">
       <li><a href="hardware.html">Overview</a></li>
       <li><a href="hardware/design.html">Design</a></li>
+      <li><a href="hardware/kinematics.html">Kinematics</a></li>
     </ul>
     
-    <p class="menu-label">
-      Software
-    </p>
-    <ul class="menu-list">
-      <li><a href="software.html">Overview</a></li>
-      <li><a href="software/gui.html">GUI</a></li>
-      <li><a>Algorithms</a></li>
-      <li><a href = "software/embedded.html">Embedded</a></li>
-    </ul>
 
     <p class="menu-label">
       Electrical
@@ -122,6 +108,17 @@
       <li><a href="electrical.html">Overview</a></li>
       <li><a href="electrical/design.html">Design</a></li>
     </ul>
+
+    <p class="menu-label">
+      Software
+    </p>
+    <ul class="menu-list">
+      <li><a href="software.html">Overview</a></li>
+      <li><a href="software/gui.html">GUI</a></li>
+      <li><a href = "software/embedded.html">Embedded</a></li>
+    </ul>
+
+
     
     <p class="menu-label">
       Drawings
@@ -134,7 +131,13 @@
       Safety
     </p>
     <ul class="menu-list">
-      <li><a href="FMEAs.html">FMEAs</a></li>
+      <li><a class="is-active" href="FMEAs.html">FMEAs</a>
+        <ul>
+            <li><a>Hardware</a></li>
+            <li><a>Software</a></li>
+            <li><a>Electrical</a></li>
+
+          </ul></li>
     </ul>
 
 
