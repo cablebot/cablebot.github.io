@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Drawings</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
 
@@ -13,72 +14,13 @@
 
   <body class = "has-navbar-fixed-top">
 
-      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="https://cablebot.github.io">
-              <img src="../menu-logo.png" width="112" height="28">
-            </a>
-        
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-        
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item" href="/">
-                Home
-              </a>
+      <div id="navbar-placeholder"></div>
+      <script>
+          $(function(){
+            $("#navbar-placeholder").load("/navbar.html");
+          });
+      </script>
 
-              <a class="navbar-item" href="#">
-                Goals
-              </a>
-        
-              <a class="navbar-item" href="../report.html">
-                Report
-              </a>
-        
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link" href="../documentation.html">
-                  Documentation
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <a class="navbar-item">
-                    Hardware
-                  </a>
-                  <a class="navbar-item">
-                    Software
-                  </a>
-                  <a class="navbar-item">
-                    Electronics
-                  </a>
-                  <a class="navbar-item">
-                    Drawings
-                  </a>
-                  <a class="navbar-item">
-                    Safety
-                  </a>
-                  <a class="navbar-item">
-                    Bill of Materials
-                  </a>
-                </div>
-              </div>
-            </div>
-        
-            <div class="navbar-end">
-                <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-primary">
-                      <strong>About Us</strong>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
 
         
 <div class="columns is-fullheight">
