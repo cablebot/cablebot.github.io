@@ -16,7 +16,11 @@
   <body class = "has-navbar-fixed-top">
     <div id="navbar-placeholder"></div>
 
-
+    <script>
+        $(function(){
+          $("#navbar-placeholder").load("/navbar.html");
+        });
+    </script>
         
     <section class="hero is-medium is-primary">
       <div class="hero-body">
@@ -78,11 +82,7 @@
       </div>
     </footer>
     <script type="text/javascript" src="lib/main.js"></script>
-    <script>
-        $(function(){
-          $("#navbar-placeholder").load("navbar.html");
-        });
-    </script>
+
   </body>
 
 
