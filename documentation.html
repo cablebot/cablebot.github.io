@@ -19,6 +19,7 @@
           $(function(){
             $("#navbar-placeholder").load("/navbar.html");
           });
+          
       </script>
 
  <!--      
@@ -80,18 +81,28 @@
 
 --> 
 
-
-    <div id="doc-sidebar-placeholder"></div>
+<div class="columns is-fullheight">
+    <div class="column is-2 is-sidebar-menu is-hidden-mobile">
+  <div id="doc-sidebar-placeholder"></div>
     <script>
       $(function(){
-        $("#doc-sidebar-placeholder").load("doc-sidebar.html");
+        $("#doc-sidebar-placeholder").load("/doc-sidebar.html", function(){
+          document.getElementById('doc-overview').className='is-active';
+          document.getElementById('hw-design-expando').style.display = null;
+        }); 
+        //$('#doc-overview').addClass("is-active");
       });
-      document.getElementById("doc-overview").className = 'is-active';
+
+
+
+
+      //document.getElementById("doc-overview").className = 'is-active';
     </script>
-    
-    <div class="column is-main-content">
-      Main content
     </div>
+    <div class="column is-main-content">
+      Main content ajfoasjfoiashvaosdfj aslfcmjasofjamocasofpmcjaopsfcmjasop
+    </div>
+</div>
   <script type="text/javascript" src="/lib/main.js"></script>
   </body>
 </html>
